@@ -11,7 +11,7 @@ redirect_from:
 
 Work experience
 ======
-* : Research Assistant
+* Senior : Research Assistant
   * Github University
   * Duties included: Tagging issues
   * Supervisor: Professor Git
