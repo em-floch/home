@@ -5,5 +5,3 @@ and come up with new village that souns like my hometown name in Bretagne, Franc
 use one hidden and tanh activation layers."
 collection: portfolio
 ---
-
- <img src='/images/bretagne.png'>
