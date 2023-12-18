@@ -14,7 +14,7 @@ Hi, Emeline there 👋
 I'm a Senior Data Scientist at Gro Intelligence where I predict the impact of climate change on global food supplies, 
 informing strategies to mitigate risks and ensure food availability for all.
 
-I have a Master's degree in Computer Science and Machine Learning from Grenoble Institute of Technology, France. 
+I have a Master's degree in Computer Science and Machine Learning from Ensimag, France. 
 I studied Machine Learning at Carnegie Mellon University, USA as part of a Graduate Exchange Program.
 
 Through my work in time series forecasting and machine learning, 
@@ -46,10 +46,9 @@ I was responsible for:
 🚄 Data Science Research Intern @ SNCF (Paris, France))
 ------
 
-SNCF is the French national railway company and manages the rail traffic in France and the Principality of Monaco.
-
-As Research Intern, I was responsible for:
-- Building a predictive model to forecast the foot traffic in train stations
+SNCF is the French national railway company and manages the rail traffic in France as a Reasearch Inter I 
+designed a predictive model to forecast the foot traffic in train stations. I implemented a XGBoost model with a clustering 
+of the train stations using Dynamic Time Warping to identify similar stations and improve the model performance.
 
 
 
