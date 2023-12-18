@@ -1,0 +1,359 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <style>
+        .mainbox {
+            padding: 23px 0;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .col-centered {
+            float: none;
+            margin: 0 auto;
+        }
+
+        .profile_img {
+            padding-right: 20px;
+            flex-direction: row;
+            display: flex;
+        }
+
+        .u {
+            flex-grow: 1;
+        }
+
+        .dm {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .dn {
+            justify-content: flex-start;
+            flex-direction: row;
+            display: flex;
+        }
+
+        .dr {
+            margin-left: 20px;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+        }
+
+        .dp {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: block;
+        }
+
+
+        /* img, svg {
+    vertical-align: middle;
+  } */
+
+        .bx {
+            fill: rgba(0, 0, 0, 0.84);
+            color: rgba(0, 0, 0, 0.84);
+            display: block;
+            letter-spacing: 0px;
+            font-size: 15.8px;
+            line-height: 20px;
+            font-style: normal;
+            font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+            font-weight: 600;
+        }
+
+        .af {
+            fill: rgba(0, 0, 0, 0.54);
+            color: rgba(0, 0, 0, 0.54);
+            display: block;
+            letter-spacing: 0px;
+            font-size: 15.8px;
+            line-height: 20px;
+            font-style: normal;
+            font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+            font-weight: 400;
+        }
+
+        .dsbox {
+            margin-top: 38px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .dubox {
+            margin: auto;
+            max-width: 700px;
+            position: relative;
+        }
+
+        .dvbox {
+            /* padding-bottom: 30%; */
+        }
+
+        .bhbox {
+            height: auto;
+            left: 0;
+            top: 0;
+            /* position: absolute; */
+            width: 100%;
+        }
+
+        .eafont {
+            margin-bottom: -0.28em;
+            margin-top: 0.86em;
+            letter-spacing: -0.022em;
+            line-height: 1.12;
+            font-size: 23px;
+            /* padding-left: 20px;
+    padding-right: 20px; */
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.84);
+            font-style: normal;
+            font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+        }
+
+        .blog-cont {
+            /* padding-top: 20px; */
+        }
+
+        .blog-cont p {
+            color: #67666a;
+            line-height: 22px;
+        }
+
+        .dsbox a:visited {
+            /* color:red; */
+            border-bottom-color: white !important;
+        }
+
+        a:visited {
+            /* color:red; */
+            /* border-bottom-color:white !important;  */
+        }
+
+        .dsbox a:hover {
+            color: #056797;
+            border-bottom-color: white !important;
+            text-decoration: none;
+        }
+
+        img {
+            vertical-align: bottom;
+            max-width: 100%;
+            height: auto;
+            border: 0;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        .pt-page-current *,
+        .no-js .pt-page * {
+            height: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="https://cdn-images-1.medium.com/max/1600/1*emiGsBgJu2KHWyjluhKXQw.png"
+                alt="" width="72" height="72">
+                
+            <h2>Medium to HTML</h2>
+            <p class="lead">Below is an example of how you can embed your medium articles into your personal websites</p>
+            <!-- <div class="row"> -->
+                    <h3>How to get handle name?</h3>
+                    <img src="./handler.png" class="d-block mx-auto mb-4" alt="...">
+            <!-- </div> -->
+
+
+
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <form class="card p-2 col-lg-4 col-md-4 col-sm-12" id="myForm">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Handle name Ex: warrrensbox" name="handle_name" id="handle_name" >
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-secondary">Get content</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="jsonContent"></div>
+
+
+        <!-- <div class="col-12 col-md-6">
+            <form id="myForm">
+                <div class="mb-3">
+                    <label for="field0" class="d-inline-block mb-1">Medium Handle Name</label>
+                    <input name="handle_name" id="handle_name" type="text"
+                        class="form-control form-control-lg input-block" placeholder="Test contact's name">
+                    <span class="form-control-invalid-text">Your full name is optional.</span>
+                </div>
+
+                <button type="submit" class="btn btn-blue btn-medium f4">Submit</button>
+
+            </form>
+        </div> -->
+
+    </div>
+    <script>
+        window.addEventListener("load", function () {
+            $(document).ready(function () {
+                console.log("ready!");
+                $('#jsonContent').getMedium("warrensbox");
+            });
+
+            function getData() {
+                var formData = new FormData(form);
+                var XHR = new XMLHttpRequest();
+                var obj = {}
+
+                for (var data of formData.entries()) {
+                    obj[data[0]] = data[1]
+                }
+
+                XHR.addEventListener('load', function (event) {
+                    document.getElementById('handle_name').value = ""
+                });
+
+                // Define what happens in case of error
+                XHR.addEventListener('error', function (event) {
+                    //alert('Message sent!\n Now, check your email to see the imformation you sent!\n');
+                });
+                console.log(obj.handle_name)
+                $('#jsonContent').getMedium(obj.handle_name);
+            }
+
+            var form = document.getElementById("myForm");
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                getData();
+            });
+
+        });
+
+        $(function (handle_name) {
+
+            $.fn.getMedium = function (handle_name) {
+                console.log(handle_name)
+
+                var $content = $('#jsonContent');
+
+                var mediumName = handle_name
+
+                var data = {
+                    rss_url: 'https://medium.com/feed/@' + mediumName
+                };
+                $.get('https://api.rss2json.com/v1/api.json', data, function (response) {
+                    if (response.status == 'ok') {
+                        var output = '';
+                        var authorImage = response.feed.image;
+                        var pathArray = authorImage.split("/");
+                        var imageId = pathArray[pathArray.length - 1]
+
+                        $.each(response.items, function (k, item) {
+
+                            var visibleSm;
+                            var author = "https://medium.com/@" + mediumName
+                            var tagIndex = item.description.indexOf('<img'); // Find where the img tag starts
+                            var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; // Find where the src attribute starts
+                            var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
+                            var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
+                            var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
+                            var profileImage = "https://miro.medium.com/fit/c/80/80/" + imageId
+
+                            if (src.match(/https?:\/\/(medium\.com\/_\/.+)/g)) {
+                                console.log("Ignore comments")
+                            } else {
+
+                                var time = item.pubDate
+                                time = time.replace(/\s/, 'T') + 'Z'
+                                var formattedDate = new Date(time);
+                                var day = formattedDate.getDate();
+                                var month = formattedDate.getMonth();
+                                var month_str = "Jan"
+                                month += 1;  // JavaScript months are 0-11
+                                if (month == 1) { month_str = "Jan" }
+                                if (month == 2) { month_str = "Feb" }
+                                if (month == 3) { month_str = "Mar" }
+                                if (month == 4) { month_str = "Apr" }
+                                if (month == 5) { month_str = "May" }
+                                if (month == 6) { month_str = "Jun" }
+                                if (month == 7) { month_str = "Jul" }
+                                if (month == 8) { month_str = "Aug" }
+                                if (month == 9) { month_str = "Sep" }
+                                if (month == 10) { month_str = "Oct" }
+                                if (month == 11) { month_str = "Nov" }
+                                if (month == 12) { month_str = "Dec" }
+
+                                var year = formattedDate.getFullYear();
+                                var yourString = item.description.replace(/<img[^>]*>/g, ""); //replace with your string.
+                                var maxLength = 400 // maximum number of characters to extract
+                                var trimmedString = yourString.substr(0, maxLength);
+                                trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
+                                output += '<div class="row">' +
+                                    '<div class="col-12 col-lg-8 col-md-8 col-sm-12 col-centered" style="margin: auto;">' +
+                                    '<div class="mainbox">' +
+                                    '<div>' +
+                                    '<div class="profile_img">' +
+                                    '<div class="u">' +
+                                    '<div class="dm">' +
+                                    '<div class="dn">' +
+                                    '<div>'
+                                output += '<img alt="' + item.author + '" style="border-radius: 50%;display: block; height: 40px; width: 40px;" src=' + profileImage + ' class="dp" width="40" height="40">'
+                                output += '</div>'
+                                output += '<div class="dr">'
+                                output += '<a href="' + author + '" target="_blank"> <span class="bx">' + item.author + '</span></a>'
+                                output += '<span class="af">' + month_str + " " + day + '</span>'
+                                output += '</div>'
+                                output +=
+                                    '</div>' +
+                                    '</div>' +
+                                    '</div>' +
+                                    '</div>' +
+                                    '</div>'
+                                output +=
+                                    '<div class="dsbox">' +
+                                    '<div class="dubox">' +
+                                    '<div class="dvbox">'
+                                output += '<a href="' + item.link + '" target="_blank"><img alt="" src="' + src + '" class="bhbox" width="720" height="210"></a>'
+                                output += '</div>' +
+                                    '</div>'
+                                output += '<a href="' + item.link + '" target="_blank"><h3 class="eafont">'
+                                output += item.title
+                                output += '</h3></a>'
+                                output += '<div class="blog-cont">'
+                                output += '<p>' + trimmedString + '...</p>'
+                                output += '<p><a href="' + item.link + '" target="_blank"> Continue reading...</a></p>'
+                                output += '</div>'
+                                output += '</div>'
+                                output += '</div>'
+                                output += '</div>'
+                                output += '</div>'
+                                return true
+                            }
+                        });
+                        $content.html(output);
+                    }
+                });
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
