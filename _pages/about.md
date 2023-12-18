@@ -11,7 +11,7 @@ redirect_from:
 Hi, Emeline there 👋
 ======
 
-I'm a Senior Data Scientist at Gro Intelligence where I predict the impact of climate change on global food supplies, 
+I'm a Senior Data Scientist at [Gro Intelligence](https://www.gro-intelligence.com/) where I predict the impact of climate change on global food supplies, 
 informing strategies to mitigate risks and ensure food availability for all.
 
 I have a Master's degree in Computer Science and Machine Learning from Ensimag, France. 
@@ -35,7 +35,7 @@ As a Senior Data Scientist, my responsabilities include:
 🏙️ Data Scientist @ Locus Analytics (New York, USA)) 
 ------
 
-Locus Analytics is an Economic Research Firm that uses data science to measure how different 
+[Locus Analytics](https://www.home.locus/) is an Economic Research Firm that uses data science to measure how different 
 distribution of industries and companies impacts local economies.
 I was responsible for:
 - Ingest and standardize data from different Economic and Financial sources
@@ -46,8 +46,8 @@ I was responsible for:
 🚄 Data Science Research Intern @ SNCF (Paris, France))
 ------
 
-SNCF is the French national railway company and manages the rail traffic in France as a Reasearch Inter I 
-designed a predictive model to forecast the foot traffic in train stations. I implemented a XGBoost model with a clustering 
+SNCF is the French national railway company and manages the rail traffic in France. As a Researcher Intern in the Innovation and research department,
+I designed a predictive model to forecast the foot traffic in Paris regional train stations. I implemented a XGBoost model with a clustering 
 of the train stations using Dynamic Time Warping to identify similar stations and improve the model performance.
 
 
