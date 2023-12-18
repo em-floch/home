@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Emeline's Homepage"
+title                    : "About"
 title_separator          : "-"
 name                     : &name "Emeline Floc'h"
 description              : &description "Senior Data Scientist"
