@@ -1,0 +1,70 @@
+---
+title: 'Blog Post number 1'
+date: 2012-08-14
+permalink: /posts/2012/08/blog-post-1/
+tags:
+  - cool posts
+  - category1
+  - category2
+---
+
+This is a copy of my Medium post you can find in Towards Data Science [here](https://towardsdatascience.com/speed-up-your-pytest-github-actions-with-docker-6b3a85b943f).
+
+
+GitHub introduced Actions in 2018 as a fast and easy to set up CI/CD solution. Because of its recent release date, documentation on the topic is sometimes hard to find and I couldn’t put my hands on something that explained how to set up your Actions that run pytest in a pipenv environment into a Docker container. Here is a quick summary of the method I used on a Mac.
+
+# 1. Install Docker.
+To install Docker, download Docker Desktop from the homepage, and follow the instructions on the desktop app. You’ll need to create a Docker Hub account to publish your Docker image and be able to use it in your GitHub Actions.
+
+# 2. Create a Docker image with Pipenv.
+To create a Docker image, create a file called Dockerfile in your python project root folder, at the same level as your Pipfile.
+
+In Dockerfile copy the following lines.
+
+```
+# Get the python 3.8 base docker image
+FROM python:3.8
+# Install pipenv
+RUN pip install pipenv
+# Copy your Pipfile and Pipfile.lock in your container
+COPY Pipfile .
+COPY Pipfile.lock .
+# Install all the dependencies from your lock file directly into the # container
+RUN pipenv install — system — deploy
+```
+
+Once you’ve saved the Dockerfile, run the following commands to update your Pipfile.lock file, build your docker container using your Docker Hub username then push your Docker image to Docker Hub.
+
+```
+>> pipenv lock
+>> docker build -t <hub-username>/<repo-name>
+>> docker push <hub-username>/<repo-name>
+```
+You now have a docker image pushed to Docker Hub and it should appear in your account. You are now ready to use it within your Github Actions workflow.
+
+# 3. Setup your GitHub Actions to run within your docker container.
+The last step is creating a workflow that runs pytest in your container. Follow the following template and copy these lines in a YAML file.
+
+```
+name: Pytest with Pipenv & Docker
+# workflow triggered by any push on any branch
+on: [push]
+jobs:
+  build:
+    name: Pytest in Pipenv
+    # runs on the latest Ubuntu
+    runs-on: ubuntu-latest 
+    # runs within your Docker container
+    container:
+      image: docker://<hub-username>/<repo-name>:latest
+    # checkout your code from your repository
+    # and runs pytest in your pipenv environment
+    steps:
+    - uses: actions/checkout@v2
+    - name: Test with pytest
+      run: |
+          pipenv run pytest tests/
+```
+      
+Save this file in your .github/workflows/ folder. Once all these steps are done and you push code to your repository with tests in your tests/ folder, you should see on the GitHub Actions page that your container has been initialized and that your tests have been run in the container. You should also see that the setup of the local environment was much faster than by simply installing the dependencies from the pipfile in your workflow.
+And there you have it, the easiest way to speed up your pytest in Github Actions.
