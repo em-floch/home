@@ -11,7 +11,7 @@ redirect_from:
 Hi, Emeline there 👋
 ======
 
-I'm a Senior Data Scientist at [Gro Intelligence](https://www.gro-intelligence.com/) where I predict the impact of climate change on global food supplies, 
+I'm a Senior Data Scientist at [Gro Intelligence](https://www.gro-intelligence.com/) where I forecast the impact of climate change on global food supplies, 
 informing strategies to mitigate risks and ensure food availability for all.
 
 I have a Master's degree in Computer Science and Machine Learning from Ensimag, France. 
