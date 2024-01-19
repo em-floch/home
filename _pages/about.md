@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, Emeline there 👋
+👋
 ======
 
 I'm a Senior Data Scientist at [Gro Intelligence](https://www.gro-intelligence.com/) where I forecast the impact of climate change on global food supplies, 
@@ -17,38 +17,25 @@ informing strategies to mitigate risks and ensure food availability for all.
 I have a Master's degree in Computer Science and Machine Learning from Ensimag, France. 
 I studied Machine Learning at Carnegie Mellon University, USA as part of a Graduate Exchange Program.
 
-Through my work in time series forecasting and machine learning, 
-I'm dedicated to contributing to a world where AI solutions drive positive social changes.
+Through my work in Machine Learning and Time Series forecasting, 
+I am focused on building AI solutions that drive positive societal change.
 
 My Experience 
-======
+--------------
 
-🌾 Senior Data Scientist @ Gro Intelligence (New York, USA)
-------
+- 🌾 Senior Data Scientist @ Gro Intelligence (New York, USA)
+  - Forecasting the impact of climate change on global food supplies to mitigate risks of food insecurity
 
-Gro Intelligence is a data analytics company that builds proprietary AI systems to evaluate the risks of 
-climate events on global food supply and demand.
-As a Senior Data Scientist, my responsabilities include:
-- Building predictive models to forecasts crop yields and trade flows
-- Design Machine Learning solutions to quantify the impact of climate change on food security 
-
-🏙️ Data Scientist @ Locus Analytics (New York, USA)) 
-------
-
-[Locus Analytics](https://www.home.locus/) is an Economic Research Firm that uses data science to measure how different 
-distribution of industries and companies impacts local economies.
-I was responsible for:
-- Ingest and standardize data from different Economic and Financial sources
-- Implement Machine Learning solution to transform text data into structured data
-- Design models to assess the health of local economies and identify development opportunities
+  
+- 🏙️ Data Scientist @ Locus Analytics (New York, USA))
+  - Evaluating the impact of industry distributions on the economic health of cities
 
 
-🚄 Data Science Research Intern @ SNCF (Paris, France))
-------
+- 🚄 Data Science Research Intern @ SNCF (Paris, France))
+  - Forecasting foot-traffic in train stations to enhance network efficiency
 
-SNCF is the French national railway company and manages the rail traffic in France. As a Researcher Intern in the Innovation and research department,
-I designed a predictive model to forecast the foot traffic in Paris regional train stations. I implemented a XGBoost model with a clustering 
-of the train stations using Dynamic Time Warping to identify similar stations and improve the model performance.
-
-
+Personal Projects
+--------------
+- **Generating The Office episodes with Transformers**
+  - Implementing a Transformer decoder from scratch to generate new The Office scripts. [Github Repo](https://github.com/em-floch/dunder-mifflin-generator)
 
