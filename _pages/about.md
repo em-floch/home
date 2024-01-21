@@ -7,8 +7,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-👋
--------
+
+### About me
 
 I'm a Senior Data Scientist at [Gro Intelligence](https://www.gro-intelligence.com/) where I forecast the impact of climate change on global food supplies, 
 informing strategies to mitigate risks and ensure food availability for all.
@@ -19,8 +19,7 @@ I studied Machine Learning at Carnegie Mellon University, USA as part of a Gradu
 Through my work in Machine Learning and Time Series forecasting, 
 my goal is to build AI solutions that drive positive societal change.
 
-My Experience
---------------
+### My Experience
 
 - 🌾 Senior Data Scientist @ Gro Intelligence (New York, USA)
   - Forecasting the impact of climate change on global food supplies to mitigate risks of food insecurity
@@ -33,8 +32,7 @@ My Experience
 - 🚄 Data Science Research Intern @ SNCF (Paris, France))
   - Forecasting foot-traffic in train stations to enhance network efficiency
 
-Personal Projects and Curiosities
---------------
+### Personal Projects and Curiosities
 - **Generating TV Show scripts with Transformers**
   - Implementing a Transformer model from scratch to generate new The Office scripts. [Github Repo](https://github.com/em-floch/dunder-mifflin-generator)
 - **Forecasting Bike Share Volume with Autoformer**
