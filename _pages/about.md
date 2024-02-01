@@ -22,8 +22,6 @@ my goal is to build AI solutions that drive positive societal change.
 - **Implementing LipNet with TensorFlow**
   - Reproducing lipreading model from research paper [LipNet: End-to-End Sentence-level Lipreading](https://arxiv.org/abs/1611.01599) 
   - Implementing a Video-to-Text Convolutional Neural Network to read lips from video sequences and translate to text. [Github Repo](https://github.com/em-floch/lipreader-vid2text)
-- **Forecasting Bike Share Volume with GluonTS**
-  - Applying Transformer-based algorithms for Times Series to forecast the number of Citi bike trip per day in NYC. [Github Repo](https://github.com/em-floch/citi-bike-forecast/tree/main)
 - **Generating TV Show scripts with Transformers and Pytorch**
   - Implementing a Transformer model from scratch to generate new The Office scripts. [Github Repo](https://github.com/em-floch/dunder-mifflin-generator)
 - **Generating local sounding village names with Multi-Layer Perceptron with Pytorch**
